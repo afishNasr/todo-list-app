@@ -15,18 +15,13 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const newTask = { id: Date.now(), text };
     tasks.push(newTask);
     res.status(201).json(newTask);
-  } else if (req.method === 'PUT') {
-    // Update a task
-    const { id, text } = req.body;
-    tasks = tasks.map((task) => (task.id === id ? { ...task, text } : task));
-    res.status(200).json({ id, text });
   } else if (req.method === 'DELETE') {
     // Delete a task
     const { id } = req.query;
     tasks = tasks.filter((task) => task.id !== Number(id));
     res.status(200).json({ message: 'Task deleted' });
   } else {
-    res.setHeader('Allow', ['GET', 'POST', 'PUT', 'DELETE']);
+    res.setHeader('Allow', ['GET', 'POST', 'DELETE']);
     res.status(405).end(`Method ${req.method} not allowed`);
   }
 }
