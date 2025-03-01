@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+h1 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 60px;
+  text-align: center;
+}
+
+p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 1opx;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.label{
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 1opx;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #cac5d7dd;
+}
+
+.box {
+  background-color: #ffff;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  width: 99%;
+  padding: 20px;
+  box-shadow: 1px 1px 3px 3px #c6c3c5f2;
+}
+
+.add-task {
+  justify-content: space-between;
+  display:inline-flex;
+  width: auto;
+  padding: 10px 10px;
+  margin: 8px 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 3px solid #ad9dab;
+}
+.add-task:hover{
+  background-color: rgba(215, 189, 215, 0.693);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4a243df2;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #443f5b;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
